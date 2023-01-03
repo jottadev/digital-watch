@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prosto One';
+}
+
+main{
+    background: rgb(0,81,184);
+    background: linear-gradient(50deg, rgba(0,81,184,1) 0%, rgba(0,193,232,1) 100%);
+    
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container{
+
+    width: 700px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container div{
+    background: #001d3d;
+    color: #FFF;
+
+    border-radius: 10px;
+    width: 200px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#horas, #minutos, #segundos{
+    font-size: 5rem;
+}
+
+p{
+    position: absolute;
+    bottom: 10px;
+    color: #669bbc;
+    transition: .1s ease-in;
+}
+
+p:hover{
+    color: #8ac3e7;
+}
