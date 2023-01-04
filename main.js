@@ -12,7 +12,16 @@ const relogio = setInterval(function time() {
     minutos.textContent = min;
     segundos.textContent = sgs; 
 
-    if(hrs < 10) hrs = '0' + hrs;
-    if(min < 10) min = '0' + min;
-    if(sgs < 10) sgs = '0' + sgs;
+    if(sgs < 10){
+        segundos.textContent = '0' + sgs;
+    }
+
+    if(min < 10){
+        minutos.textContent = '0' + min;
+    }
+
+    if(hrs < 10){
+        horas.textContent = '0' + hrs;
+    }
+
 })
