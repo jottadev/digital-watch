@@ -57,8 +57,21 @@ p{
     bottom: 10px;
     color: #669bbc;
     transition: .1s ease-in;
+    text-align: center;
 }
 
 p:hover{
     color: #8ac3e7;
+}
+
+@media screen and (max-width: 799px) {
+    .container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .container div{
+        width: 80vw;
+        height: 150px;
+    }
 }
