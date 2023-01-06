@@ -24,4 +24,5 @@ const relogio = setInterval(function time() {
         horas.textContent = '0' + hrs;
     }
 
+    
 })
